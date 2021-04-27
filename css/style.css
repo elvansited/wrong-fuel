@@ -11,9 +11,30 @@ body {
 p{
     margin-bottom: 0.5rem;
 }
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  .imgsmall {
+    max-width: 50%;
+    height: auto;
+  }
+  .logoplace {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: -1.5rem;
+}
 section {
     padding: 0;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 .nolink, .nolink:hover {
     text-decoration: none!important;
@@ -57,9 +78,8 @@ border-bottom: #008ed6 3px solid;
 
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.1);
+  50% { transform: scale(1.1); }
   100% { transform: scale(1); }
-  }
 }
 @keyframes glow {
   from {
@@ -100,6 +120,12 @@ border-bottom: #008ed6 3px solid;
     .text-size-xl{
             font-size: 3.5rem;
     }
+    .text-size-small{
+        font-size: 1rem;
+    }
+            .text-size-xs{
+        font-size: 0.95rem;
+    }
 
 
 .text-size-lg{
@@ -119,11 +145,18 @@ border-bottom: #008ed6 3px solid;
     font-size: 1.7rem;
 }
 
+.text-weight-increased
+{
+    font-weight: 700;
+}
+
 
 .text-weight-bold
 {
     font-weight: 800;
 }
+
+
 
 
 
@@ -142,14 +175,14 @@ border-bottom: #008ed6 3px solid;
 #services-section {
   background-repeat: no-repeat;
     background-position: absolute;
-      background-image: linear-gradient(to bottom, rgba(208, 208, 208, 0.3) 10%, rgba(0, 0, 0, 0.5) 100%, transparent 1%), url(../img/woman2.jpg);
+      background-image: linear-gradient(to bottom, rgba(208, 208, 208, 0) 10%, rgba(0, 0, 0, 0.5) 100%, transparent 1%), url(../img/woman2.jpg);
   background-size: cover;
   background-attachment: fixed;
     min-height:400px;
 }
 
 #faq-section {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0.9) 100%, transparent 1%), url(../img/woman2.jpg);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.9) 100%, transparent 1%), url(../img/woman2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -197,6 +230,7 @@ border-bottom: #008ed6 3px solid;
       .contact-card__form {
     width: 100%;
       padding: 0.5rem!important;
+      min-height: 5rem;
     }
     .special-padding {
         padding-top: 1rem!important;
@@ -226,6 +260,11 @@ border-bottom: #008ed6 3px solid;
             #faq-section {
         min-height: 1250px!important;
     }
+    .contact-card__form {
+        width: 100%;
+          padding: 0.5rem!important;
+          min-height: 5rem!important;
+        }
         
 
 .text-size-medium-special{
@@ -268,5 +307,6 @@ border-bottom: #008ed6 3px solid;
     width: 100%;
       padding: 1.5rem 2rem;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 10%, rgb(0,0,0, 0.6) 100%, transparent 50%); 
+        min-height: 12.5rem;
 }
 
